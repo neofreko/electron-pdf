@@ -1,6 +1,6 @@
 #!/bin/sh
 
-export DISPLAY=:0
+export DISPLAY=:99
 
 # Start dbus
 mkdir -p /var/run/dbus
