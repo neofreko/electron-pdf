@@ -11,7 +11,7 @@ RUN apt-get update && \
 RUN npm install -g electron-prebuilt
 
 COPY ./package.json /opt/package.json
-RUN npm install
+RUN npm install --production
 
 COPY ./run.sh /opt/run.sh
 COPY ./lib/ /opt/lib/

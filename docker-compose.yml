@@ -6,3 +6,6 @@ web:
     - ./run.sh:/opt/run.sh
   ports:
     - "3000:3000"
+  environment:
+    MANDATORY_HEADER: X-Foo
+    MANDATORY_HEADER_VALUE: xxx
