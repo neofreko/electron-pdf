@@ -8,7 +8,7 @@ RUN apt-get update && \
   xfonts-100dpi xfonts-75dpi xfonts-scalable xfonts-cyrillic fonts-font-awesome fonts-takao-mincho && \
   rm -rf /var/lib/apt/lists/*
 
-RUN npm install -g electron-prebuilt@0.37.8
+RUN npm install -g electron-prebuilt@0.30.5
 
 COPY ./package.json /opt/package.json
 RUN npm install --production
